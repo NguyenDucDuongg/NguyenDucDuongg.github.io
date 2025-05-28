@@ -1,0 +1,159 @@
+/* style.css */
+
+/* Reset mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body và font chữ */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+main h2 {
+    color: #004080;
+    margin-top: 20px;
+}
+
+main p {
+    margin: 15px 0;
+}
+
+/* Images */
+main img {
+    display: block;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #222;
+    color: #fff;
+    margin-top: 30px;
+    border-radius: 0 0 8px 8px;
+}
+/* Dành riêng cho trang Donate */
+
+/* Các section donate */
+main section {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #eef5ff;
+    border-left: 5px solid #0077cc;
+    border-radius: 6px;
+}
+
+/* Nút bấm */
+button {
+    background-color: #0077cc;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+/* Ảnh QR */
+section img {
+    display: block;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+/* Dành riêng cho trang Thông tin mới */
+
+/* Các section thông tin */
+main section {
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #008080;
+    border-radius: 6px;
+}
+
+/* Tiêu đề phụ */
+main h2 {
+    margin-top: 20px;
+    color: #006666;
+}
+
+/* Danh sách code */
+main p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+/* Input nhập code */
+input[type="text"] {
+    padding: 10px;
+    width: 250px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Nút nhập code */
+button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
