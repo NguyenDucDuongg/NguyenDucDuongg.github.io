@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang Thông Tin - Website Game của Dưỡng</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div id="branding">
+            <h1>Chào mừng đến với Website game của Dưỡng</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="trangchu.html" class="current">Trang chủ</a></li>
+                <li><a href="thongtin.html">Thông tin mới</a></li>
+                <li><a href="dichvu.html">Donate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main style="padding: 20px;">
+        <section>
+            <h2><i>Bản cập nhật sắp tới</i></h2>
+            <p>Bản cập nhật sắp tới sẽ mang đến những <b>sự kiện</b> mới mẻ, hấp dẫn người dùng. Kèm theo những món quà bù trong quá trình cập nhật game.</p>
+        </section>
+
+        <section>
+            <h2><i>Code mới</i></h2>
+            <ul>
+                <li>2025starts</li>
+                <li>ROK2025NEW</li>
+                <li>ROKVICTORY</li>
+                <li>ARBdiscROK</li>
+                <li>ROKTKSGIVE</li>
+                <li>ROKVIETNAM</li>
+            </ul>
+            <label for="codeInput"><b>Nhập code mới tại đây:</b></label><br>
+            <input type="text" id="codeInput" placeholder="Nhập code">
+            <button type="submit">Nhập</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Trang web giới thiệu công ty về game ROK</p>
+    </footer>
+
+    <script>
+        document.querySelector("button").addEventListener("click", function () {
+            const code = document.getElementById("codeInput").value;
+            if (code) {
+                alert("Bạn đã nhập code: " + code);
+            } else {
+                alert("Vui lòng nhập mã code!");
+            }
+        });
+    </script>
+
+</body>
+</html>
