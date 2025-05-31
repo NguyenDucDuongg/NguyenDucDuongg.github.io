@@ -1,0 +1,223 @@
+/* Base styles */
+body {
+  font: 16px/1.6 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Typography reset */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Button */
+.button_1 {
+  height: 40px;
+  background: #e8491d;
+  border: none;
+  padding: 0 20px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button_1:hover {
+  background: #cf3e15;
+}
+
+/* Utility */
+.dark {
+  padding: 15px;
+  background: #35424a;
+  color: #ffffff;
+  margin: 20px 0;
+  border-radius: 6px;
+}
+
+/* Header */
+header {
+  background: #35424a;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #e8491d 3px solid;
+}
+
+header a {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header li {
+  float: left;
+  display: inline;
+  padding: 0 20px;
+}
+
+header #branding {
+  float: left;
+}
+
+header #branding h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight, header .current a {
+  color: #e8491d;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: #cccccc;
+  font-weight: bold;
+}
+
+/* Showcase */
+#showcase {
+  min-height: 400px;
+  background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#showcase h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+
+#showcase p {
+  font-size: 20px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+/* Newsletter */
+#newsletter {
+  padding: 20px;
+  color: #ffffff;
+  background: #35424a;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+#newsletter h1 {
+  flex: 1 1 300px;
+  font-size: 22px;
+}
+
+#newsletter form {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#newsletter input[type="email"] {
+  padding: 8px;
+  height: 35px;
+  width: 250px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+#newsletter .button_1 {
+  border-radius: 0 4px 4px 0;
+}
+
+/* Section styling */
+main section {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  color: #ffffff;
+  background-color: #e8491d;
+  text-align: center;
+  border-top: 5px solid #cf3e15;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header nav, header #branding {
+    float: none;
+    text-align: center;
+  }
+
+  header nav ul {
+    padding-top: 10px;
+  }
+
+  header li {
+    padding: 10px 0;
+    display: block;
+  }
+
+  #newsletter {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #newsletter form {
+    justify-content: center;
+    margin-top: 10px;
+  }
+#branding {
+  background-image: url('https://cdn.tgdd.vn/Files/2023/05/10/1529399/noobfeedcopy2-100523-231011.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#branding h1 {
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
