@@ -1,0 +1,67 @@
+body {
+  background: linear-gradient(to bottom, #1e1e2f, #3a3a5c);
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.zodiac-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.zodiac-list div {
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+}
+
+.zodiac-list div:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.zodiac-info {
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  min-height: 120px;
+}
+
+.zodiac-info.show {
+  opacity: 1;
+}
+
+.bach-duong { background-color: #e74c3c; }
+.kim-nguu { background-color: #27ae60; }
+.song-tu { background-color: #f39c12; }
+.cu-giai { background-color: #2980b9; }
+.su-tu { background-color: #e67e22; }
+.xu-nu { background-color: #8e44ad; }
+.thien-binh { background-color: #3498db; }
+.bo-cap { background-color: #c0392b; }
+.nhan-ma { background-color: #16a085; }
+.ma-ket { background-color: #2c3e50; }
+.bao-binh { background-color: #1abc9c; }
+.song-ngu { background-color: #9b59b6; }
